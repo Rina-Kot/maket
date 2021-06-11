@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 h2 h3 h4 h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 34px;
+    padding-bottom: 54px;
+}
+
+
+.footer{
+    background: #316099;
+    width: 100%;
+    margin-top: 112px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 64px;
+}
+
+.footer__main{
+    margin-top: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__main__left{
+    color: white;
+}
+
+.footer__main__left h3{
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.footer__main__left .text{
+    font-size: 16px;
+    max-width: 494.77px;
+    margin-top: 32px;
+    color: #ADBFD6;
+}
+
+.footer__main__right button{
+    width: 236.63px;
+    height: 56px;
+    background: #5A98D0;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+.footer__contacts{
+    display: flex;
+    justify-content: space-around;
+    gap: 42px;
+    color: white;
+    font-size: 16px;
+    padding-top: 64px;
+    border-top: 1px solid #5078A8;
+    margin-top: 96px;
+}
+
+.contacts__elem{
+    display: flex;
+    gap: 20px;
+}
+
+.contacts__elem_1 .info{
+    display: flex;
+    gap: 20px;
+}
+
+ .rights{
+    margin-top: 64px;
+    color: #83A0C2;
+    margin-left: 113px;
+}
+
+
+@media (max-width: 1024px){
+    .footer__contacts {
+        flex-direction: column;
+        padding-left: 124px;
+    }
+
+    .footer__main__left .text{
+        width: 336px;
+    }
+    
+    .footer__main__right button{
+        width: 133.04px;
+        height: 31.48px;
+    }
+}
+
+
+@media (max-width: 667px){
+   .footer__main{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 0 16px;
+   }
+
+   .footer__main__left h3{
+    font-size: 24px;
+    margin-top: -65px;
+   }
+
+   .footer__main__left .text{
+       text-align: center;
+   }
+
+   .footer__main__right button{
+    width: 108.23px;
+    height: 31.48px;
+    margin-top: 40px;
+   }
+
+   .footer__contacts{
+       flex-direction: column;
+       padding-left: 16px;
+       margin-top: 41px;
+   }
+}
+
